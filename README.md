@@ -10,7 +10,7 @@ This analysis is closely linked to our previous [manuscript](https://doi.org/10.
 
 ### How to download
 
-You can clone the repository or download the zip from this URL: <ZZZ>.
+You can clone the repository or download the zip from this URL: <https://github.com/kevinvzandvoort/espicc-somaliland-digaale-survey-2019-carriage/archive/refs/heads/main.zip>.
 
 ### Questionnaires
 
