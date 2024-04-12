@@ -16,7 +16,7 @@ You can clone the repository or download the zip from this URL: <https://github.
 
 This survey was implemented using Open Data Kit. Android tablets were provided by LSHTM Open Data Kit <https://opendatakit.lshtm.ac.uk>.
 
-- Questionnaires were programmed as multiple forms in xlsx, and can be found in the `./questionnaire/xlsx` folder in the [espicc-somaliland-digaale-survey-2019](<https://github.com/kevinvzandvoort/espicc-somaliland-digaale-survey-2019/tree/main/questionnaire/xls) repository.
+- Questionnaires were programmed as multiple forms in xlsx, and can be found in the `./questionnaire/xlsx` folder in the [espicc-somaliland-digaale-survey-2019](https://github.com/kevinvzandvoort/espicc-somaliland-digaale-survey-2019/tree/main/questionnaire/xls) repository.
 - Only the additional swab related form has been added to this repository, as the `./questionnaire/xlsx/s5_swab/xlsx` file.
 - The converted xls file uploaded to an ODK server and used with *ODK Collect* during fieldwork has also been added in the `./questionnaire/xls` folder. Unlike some of the other forms, no manual edits were made to this xls file.
 
