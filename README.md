@@ -17,8 +17,8 @@ You can clone the repository or download the zip from this URL: <https://github.
 This survey was implemented using Open Data Kit. Android tablets were provided by LSHTM Open Data Kit <https://opendatakit.lshtm.ac.uk>.
 
 - Questionnaires were programmed as multiple forms in xlsx, and can be found in the `./questionnaire/xlsx` folder in the [espicc-somaliland-digaale-survey-2019](https://github.com/kevinvzandvoort/espicc-somaliland-digaale-survey-2019/tree/main/questionnaire/xls) repository.
-- Only the additional swab related form has been added to this repository, as the `./questionnaire/xlsx/s5_swab/xlsx` file.
-- The converted xls file uploaded to an ODK server and used with *ODK Collect* during fieldwork has also been added in the `./questionnaire/xls` folder. Unlike some of the other forms, no manual edits were made to this xls file.
+- Only the additional swab related form has been added to this repository, as the `./questionnaire/xlsx/s5_swab.xlsx` file.
+- Th file was converted to an xls file to work on an ODK server, and used with *ODK Collect* during fieldwork. Unlike some of the other forms, no manual edits were made to this xls file.
 
 ### Included data sets
 
@@ -37,8 +37,10 @@ The following datasets are included:
   - Nasopharyngeal swabs assessed using lytA qPCR and serotyped using microarray
 - `serotypes_by_vaccine.csv`
   - Serotypes included in different PCV products
-- `other_settings/*`
+- `other_data/*`
   - Pneumococcal carriage prevalence by age from studies conducted in the Gambia, Kenya, Uganda, and Malawi
+  - Serotype-specific invasiveness estimates from Løchen et al (2022; https://doi.org/10.1371/journal.pcbi.1009389)
+  - Temperature data from our test (s0_test) and pilot (s1_pilot) shipment.
 - `poststratification_data/*`
   - Estimated population size of specific strata, from the main `espicc-somaliland-digaale-survey-2019` repository
 

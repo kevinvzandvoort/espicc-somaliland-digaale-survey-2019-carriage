@@ -2,7 +2,7 @@
 #' - make sure you have pacman installed: install.packages("pacman")
 #' - or install and load manually
 pacman::p_load(data.table, survey, ggplot2, patchwork, magrittr, kableExtra, stringr, lmtest, zscorer, mitools,
-               binom, socialmixr, UpSetR)
+               binom, socialmixr, UpSetR, tiff)
 
 #' Set the analysis directory (usually the root directory of repo)
 analysis_dir = getwd()
@@ -20,7 +20,7 @@ source(sprintf("%s/scripts/00_setup.R", analysis_dir))
 
 #' Sampling flowchart
 #' - generates Figure 1: Flowchart of sampling procedure.
-#source(sprintf("%s/scripts/01_sampling_flowchart.R", analysis_dir)) #TODO
+source(sprintf("%s/scripts/01_sampling_flowchart.R", analysis_dir))
 
 #' Descriptive statistics sample and NP swabs
 #' - generates Table 1: Sample characteristics and carriage prevalence.
@@ -32,7 +32,8 @@ source(sprintf("%s/scripts/02_sample_characteristics.R", analysis_dir))
 #' - generates Supplemental Figure D1: Age and serotype specific invasiveness values.
 #' - generates Supplemental Figure D2: Estimated proportion of IPD cases caused by serotypes covered by PCVs.
 #' - generates Supplemental Table D1: Proportion of current IPD covered by PCVs
-#source(sprintf("%s/scripts/03_invasiveness_estimates.R", analysis_dir)) #TODO
+#'   Nb. generating the bootstrap samples is not very efficient
+source(sprintf("%s/scripts/03_invasiveness_estimates.R", analysis_dir))
 
 #' Serotype distribution
 #' - generates Figure 2: Pneumococcal serotype distribution.
@@ -48,6 +49,7 @@ source(sprintf("%s/scripts/05_carriage_prevalence.R", analysis_dir))
 #' Age-specific exposure to pneumococci
 #' - generates Figure 4: The contribution of different age groups towards the age specific exposure to pneumococcus.
 #' - generates Supplemental Table C6. The contribution of different age groups towards the age specific exposure to pneumococcus.
+#'   Nb. generating the bootstrap samples is not very efficient
 source(sprintf("%s/scripts/06_age_specific_exposure.R", analysis_dir))
 
 #' Regression analyses
@@ -81,10 +83,10 @@ source(sprintf("%s/scripts/10_other_settings.R", analysis_dir))
 #source(sprintf("%s/scripts/11_matched_datasets.R", analysis_dir))
 
 #' Temperature during shipments
-#' - generates Supplemental Figure B1. Temperature of test shipment over time.
 #' - generates Supplemental Table B1. Time until temperature exceedance.
+#' - generates Supplemental Figure B1. Temperature of test shipment over time.
 #' - generates Supplemental Figure B2. Temperature of pilot shipment over time.
-#source(sprintf("%s/scripts/12_shipment_temperature.R", analysis_dir)) #TODO
+source(sprintf("%s/scripts/12_shipment_temperature.R", analysis_dir)) #TODO
 
 #' Prevalence between first (pilot) and second shipment
 #' - generates Supplemental Table B2. Carriage prevalence in pilot and second shipment.

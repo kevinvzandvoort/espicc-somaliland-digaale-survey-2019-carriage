@@ -7,7 +7,7 @@ setwd(analysis_dir)
 #' - Malawi: https://doi.org/10.1016/j.vaccine.2018.10.021
 #' - Uganda: https://doi.org/10.1016%2Fj.vaccine.2017.07.081
 #############################################################################################################################
-data_gambia = fread("./data/other_settings/carriage_gambia.csv")
+data_gambia = fread("./data/other_data/carriage_gambia.csv")
 data_gambia %<>%
   .[, c("VT", "NVT", "S") := .(VT*N, NVT*N, S*N)] %>%
   melt(measure.vars=c("S", "VT", "NVT"), variable.name = "compartment", value.name = "observed") %>%
@@ -19,7 +19,7 @@ data_gambia %<>%
   .[, c("mid", "low", "high") := binom.confint(observed, N, methods="exact")[, c("mean", "lower", "upper")]] %>%
   .[, c("compartment", "age_group", "age_low", "age_high", "mid", "low", "high")] %>% .[, country := "Gambia"]
 
-data_kenya = fread("./data/other_settings/carriage_kenya_kilifi.csv")
+data_kenya = fread("./data/other_data/carriage_kenya_kilifi.csv")
 data_kenya %<>%
   .[, S := N - VT - NVT] %>%
   melt(measure.vars=c("S", "VT", "NVT"), variable.name = "compartment", value.name = "observed") %>%
@@ -30,7 +30,7 @@ data_kenya %<>%
   .[, c("mid", "low", "high") := binom.confint(observed, N, methods="exact")[, c("mean", "lower", "upper")]] %>%
   .[, c("compartment", "age_group", "age_low", "age_high", "mid", "low", "high")] %>% .[, country := "Kenya"]
 
-data_malawi = fread("./data/other_settings/carriage_malawi.csv")
+data_malawi = fread("./data/other_data/carriage_malawi.csv")
 data_malawi %<>%
   .[, S := N - VT - NVT] %>%
   melt(measure.vars=c("S", "VT", "NVT"), variable.name = "compartment", value.name = "observed") %>%
@@ -42,7 +42,7 @@ data_malawi %<>%
   .[, c("mid", "low", "high") := binom.confint(observed, N, methods="exact")[, c("mean", "lower", "upper")]] %>%
   .[, c("compartment", "age_group", "age_low", "age_high", "mid", "low", "high")] %>% .[, country := "Malawi"]
 
-data_uganda = fread("./data/other_settings/carriage_uganda.csv")
+data_uganda = fread("./data/other_data/carriage_uganda.csv")
 data_uganda %<>%
   .[, c("VT", "NVT", "S") := .(VT13, TOTALST-VT10, N-TOTALST)] %>%
   melt(measure.vars=c("S", "VT", "NVT"), variable.name = "compartment", value.name = "observed") %>%

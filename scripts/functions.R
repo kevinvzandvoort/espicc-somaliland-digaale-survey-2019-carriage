@@ -147,7 +147,7 @@ kblOut = function(data, formats = c(pdf = "latex", html = "html"), out_name = NU
       }
     }
     
-    k %>% save_kable(sprintf("%s/%s/%s", out_dir, names(formats)[f], out_name)) %>%
+    k %>% save_kable(sprintf("%s/%s/%s%s", out_dir, names(formats)[f], out_name, ifelse(formats[f] == "html", ".html", ""))) %>%
       tryCatch(error = function(e){message(e)}, warning = function(w){message(w)})
   }
   
