@@ -27,6 +27,7 @@ data_adults = readxl::read_excel("./data/other_data/pcbi.1009389.s049_adults.xls
 data_adults = as.data.table(data_adults)
 length(circulating_adults %>% subset(. %in% data_adults$Serotype))
 circulating_adults %>% subset(!. %in% data_adults$Serotype)
+
 #' 20B not present - 20 is present, use 20 (as it is the same serogroup)
 #' 41A is not present, average over all values
 #' NT3b, NT2, and NT4a are not present, average over all values OR assume invasiveness is 0 
