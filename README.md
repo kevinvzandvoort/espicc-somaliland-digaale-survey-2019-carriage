@@ -2,7 +2,7 @@
 
 This repository contains the data and code used for all analyses described in our manuscript:
 
-Van Zandvoort K, Hassan AI, Bobe MO, Pell CL, Ahmed MS, Ortika BD, Ibrahim S, Abdi MI, Karim MA, Eggo RM, Yusuf S, Hinds J, Soleman MS, Cummings R, McGowan C, Mulholland K, Hergeeye MA, Satzke C, Checchi F, Flasche S, *Pre-vaccination carriage prevalence of Streptococcus pneumoniae serotypes among internally displaced people in Somaliland*. Preprint available at <https://doi.org/10.1101/2024.02.09.24302568>.
+Van Zandvoort K, Hassan AI, Bobe MO, Pell CL, Ahmed MS, Ortika BD, Ibrahim S, Abdi MI, Karim MA, Eggo RM, Ali SY, Hinds J, Soleman MS, Cummings R, McGowan C, Mulholland K, Hergeeye MA, Satzke C, Checchi F, Flasche S, *Pre-vaccination carriage prevalence of Streptococcus pneumoniae serotypes among internally displaced people in Somaliland*. Preprint available at <https://doi.org/10.1101/2024.02.09.24302568>.
 
 This work is part of a larger study: Evaluating Strategies for Pneumococcal Immunization Campaigns in Crises [(ESPICC)](https://www.elrha.org/project/pneumococcal-vaccination-strategies-for-crisis-affected-populations/).
 
